@@ -24,6 +24,12 @@ footer {
             font-weight: normal;
             margin-bottom:5px;
         }
+        a.button {
+            font-family: 'raleway';
+            font-weight:bold;
+            line-height: 20px;
+            color: white;
+        }
         .btnContainer {
             margin-right: 0;
             @media screen and (max-width: 985px) {

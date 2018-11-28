@@ -656,6 +656,13 @@ footer .footContainer a {
   margin-bottom: 5px;
 }
 
+footer .footContainer a.button {
+  font-family: 'raleway';
+  font-weight: bold;
+  line-height: 20px;
+  color: white;
+}
+
 footer .footContainer .btnContainer {
   margin-right: 0;
 }
