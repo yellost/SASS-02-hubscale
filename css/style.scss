@@ -1,0 +1,12 @@
+//importation
+@import "base/normalize";
+@import "base/typos";
+
+@import "helpers/mixins";
+@import "helpers/variables";
+
+@import "layout/header";
+@import "layout/footer";
+@import "layout/general";
+
+@import "pages/homepage";

@@ -1,0 +1,134 @@
+//-----------index.html !!!----------//
+main {
+}
+.blurb {
+    text-align: right;
+}
+.row {
+    @media screen and (min-width:985px) {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+}
+.reverse {
+    @media screen and (min-width:985px) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+
+}
+.reverse>div,.row>div {
+    width:100%;
+    text-align: right;
+    @media screen and (min-width:985px) {
+        width:50%;
+    }
+}
+section.blueBanner {
+    display: flex;
+    flex-direction: column;
+    align-items:center; 
+    background-color: $blue;
+    padding: 45px 0;
+    
+    img {
+        width: 300px;
+    }
+
+    h2{
+    color:white;
+    margin-bottom:50px;
+    text-align: center;
+    @media screen and (min-width:625px) {
+        font-size: 2rem;
+    }
+    }
+}
+
+.aboutUs {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+//-----------SCROLL-----------//
+.greyBanner {
+    background-color: $grey;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:50px 0;
+
+    .category {
+        color: $lighterFont;
+        font-family: 'raleway';
+        font-size: .9rem;
+        font-weight: normal;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .hidden {
+        display:none;
+    }
+    .scrollContainer {
+        width:90%;
+        // max-height: 200px;
+        overflow: hidden;
+
+        img {
+            width:150px;
+        }
+        >div {
+            width:400%;
+            display:flex;
+            @include transition(.3s);
+        }
+        .clients {
+            transform: translateX(0);
+        }
+        .analytics {
+            transform: translateX(-25%);
+        }
+        .providers {
+            transform: translateX(-50%);
+        }
+        .vendors {
+            transform: translateX(-75%);
+        }
+        .partners {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-content: space-around;
+            width:25%;
+            div {
+                height:100px;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    ul {
+        display: flex;
+        color:$lighterFont;
+        list-style: none;
+        padding: 0;
+        li {
+            width:10px;
+            height:10px;
+            border: 1px solid $lighterFont;
+            border-radius:50%;
+            margin:0 5px;
+            cursor: pointer;
+        }
+        li.active {
+            background-color: $lighterFont;
+        }
+    }
+}

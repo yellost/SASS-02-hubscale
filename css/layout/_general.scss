@@ -1,0 +1,55 @@
+body {
+    background-color: white;
+
+//-----------MEP----------//
+a {
+    text-decoration: none;
+}
+section{
+    width:100%;
+    padding:50px 30px;
+
+    h2 {
+        color: $darkFont;
+        font-family: 'lato';
+        font-size: 1.25rem;
+        font-weight: normal;
+    }
+    h3{
+        color: $blueFont;
+        font-family: 'raleway';
+        font-size: .9rem;
+        font-weight: normal;
+        text-transform: uppercase;
+    }
+    p {
+        color: $lightFont;
+        font-family: 'lato';
+        font-size: 1rem;
+    }
+    img {
+        width:90%;
+        margin:0 auto;
+    }
+}
+
+
+//-------------BUTTON---------------//
+.button {
+    background-color: $fushia;
+    border-radius: 4px;
+    font-family: 'raleway';
+    font-size:.9em;
+    font-weight:bold;
+    line-height: 20px;
+    color: white;
+    text-align: center;
+    padding:10px 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    @include transition();
+
+    &:hover {
+        background-color: $darkFushia;
+    }
+}

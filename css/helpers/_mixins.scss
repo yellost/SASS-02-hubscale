@@ -1,0 +1,14 @@
+@mixin borderTest($color: red){
+    border: 1px solid $color;
+}
+
+@mixin positionCenter($position:absolute) {
+    position: $position;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin transition ($time:.15s,$delay:0s) {
+    transition:$time all ease-in-out $delay
+}

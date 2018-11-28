@@ -1,0 +1,34 @@
+footer {
+    padding:50px 30px;
+    h3 {
+        color: $darkFont;
+        font-family: 'lato';
+        font-size: 1rem;
+        font-weight: normal;
+    }
+    .footContainer {
+        width:80%;
+        margin:0 auto;
+        display: flex;
+
+        >div {
+        display: flex;
+        flex-direction: column;
+        margin-right:auto;
+        }
+        a {
+            text-decoration: none;
+            color: $lightFont;
+            font-family: 'lato';
+            font-size: .9rem;
+            font-weight: normal;
+            margin-bottom:5px;
+        }
+        .btnContainer {
+            margin-right: 0;
+            @media screen and (max-width: 985px) {
+                display: none;
+            }
+        }
+    }
+}
