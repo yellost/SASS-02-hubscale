@@ -1,11 +1,13 @@
 body {
     background-color: white;
-
+}
 //-----------MEP----------//
 a {
     text-decoration: none;
 }
 section{
+    display: flex;
+    flex-direction: column;
     width:100%;
     padding:50px 30px;
 
@@ -14,6 +16,12 @@ section{
         font-family: 'lato';
         font-size: 1.25rem;
         font-weight: normal;
+        @media screen and (min-width:625px) {
+            font-size: 1.6rem;
+        }
+        @media screen and (min-width:985px) {
+            font-size: 2rem;
+        }
     }
     h3{
         color: $blueFont;
